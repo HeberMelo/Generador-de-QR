@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Códigos QR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="qr.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Generador de Códigos QR</h1>
+            <p class="subtitle">Crea códigos QR personalizados en segundos</p>
+        </header>
+
+        <div class="content">
+            <div class="input-section">
+                <div class="form-group">
+                    <label for="qrText">Ingresa la URL</label>
+                    <textarea 
+                        id="qrText" 
+                        placeholder="https://ejemplo.com o cualquier texto..."
+                        rows="4"
+                    ></textarea>
+                </div>
+
+                <div class="options-grid">
+                    <div class="form-group">
+                        <label for="qrSize">Tamaño (px)</label>
+                        <input 
+                            type="number" 
+                            id="qrSize" 
+                            value="256" 
+                            min="128" 
+                            max="512" 
+                            step="64"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qrColor">Color del QR</label>
+                        <input type="color" id="qrColor" value="#000000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bgColor">Color de fondo</label>
+                        <input type="color" id="bgColor" value="#ffffff">
+                    </div>
+                </div>
+
+                <button id="generateBtn" class="btn-generate">
+                    Generar Códigos QR
+                </button>
+            </div>
+
+            <div class="output-section">
+                <div class="qr-container" id="qrContainer">
+                    <div class="placeholder">
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                            <rect x="10" y="10" width="35" height="35" rx="4" fill="#e0e0e0"/>
+                            <rect x="55" y="10" width="35" height="35" rx="4" fill="#e0e0e0"/>
+                            <rect x="10" y="55" width="35" height="35" rx="4" fill="#e0e0e0"/>
+                            <rect x="20" y="20" width="15" height="15" rx="2" fill="#666"/>
+                            <rect x="65" y="20" width="15" height="15" rx="2" fill="#666"/>
+                            <rect x="20" y="65" width="15" height="15" rx="2" fill="#666"/>
+                        </svg>
+                        <p>Tu código QR aparecerá aquí</p>
+                    </div>
+                    <canvas id="qrCanvas"></canvas>
+                </div>
+
+                <button id="downloadBtn" class="btn-download" style="display: none;">
+                     Descargar Código QR
+                </button>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3> Consejos de uso</h3>
+            <ul>
+                <li>Para URLs, incluye el protocolo (https://)</li>
+                <li>Los QR más simples son más fáciles de escanear</li>
+                <li>Mantén buen contraste entre el QR y el fondo</li>
+                <li>Tamaño recomendado: 256px o superior</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Librería QRCode.js para poder crear los códigos qr-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="qr.js"></script>
+</body>
+</html>
