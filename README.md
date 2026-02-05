@@ -22,7 +22,6 @@ Este proyecto es un generador de códigos QR que permite crear códigos de forma
 -JavaScript.
 #
 # Instalación y uso
-
 Clona el repositorio:
 git clone https://github.com/HeberMelo/Generador-de-QR.git
 #
