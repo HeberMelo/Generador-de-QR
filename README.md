@@ -1,7 +1,7 @@
-# Generador de QR
+# Generador de QR.
 Este proyecto es un generador de códigos QR que permite crear códigos de forma rápida, fácil y sencilla a partir de texto o enlaces. Está pensado para cualquier usuario que necesite convertir información en un código QR en segundos.
 #
-# Características
+# Características.
 
 -Generación instantánea de códigos QR.
 
@@ -13,7 +13,7 @@ Este proyecto es un generador de códigos QR que permite crear códigos de forma
 
 -No requiere instalación adicional.
 #
-# Tecnologías utilizadas
+# Tecnologías utilizadas.
 
 -HTML.
 
@@ -21,7 +21,11 @@ Este proyecto es un generador de códigos QR que permite crear códigos de forma
 
 -JavaScript.
 #
-# Instalación y uso
+# Vista previa. 
+<img width="1210" height="882" alt="imagen" src="https://github.com/user-attachments/assets/519b6e6a-a3b2-43c4-9608-6e2c3fd04114" />
+<img width="1210" height="814" alt="imagen" src="https://github.com/user-attachments/assets/ec531692-907b-4a37-b371-01f2e38caf1f" />
+#
+# Instalación y uso.
 **Clona el repositorio:**
 
 git clone https://github.com/HeberMelo/Generador-de-QR.git
@@ -33,3 +37,4 @@ cd Generador-de-QR
 **Abre el archivo index.html en tu navegador.**
 
 Ingresa el texto o enlace y genera tu código QR y listo.
+
