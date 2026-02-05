@@ -25,6 +25,7 @@ Este proyecto es un generador de códigos QR que permite crear códigos de forma
 <img width="1210" height="882" alt="imagen" src="https://github.com/user-attachments/assets/519b6e6a-a3b2-43c4-9608-6e2c3fd04114" />
 <img width="1210" height="814" alt="imagen" src="https://github.com/user-attachments/assets/ec531692-907b-4a37-b371-01f2e38caf1f" />
 #
+
 # Instalación y uso.
 **Clona el repositorio:**
 
